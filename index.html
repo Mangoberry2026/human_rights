@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국가인권위원회 디지털 가이드 | 국민을 위한 알기 쉬운 인권 나침반</title>
+  <meta name="description" content="모든 사람이 존엄하고 평등한 세상. 국가인권위원회의 주요 업무, 2026 최신 동향, 권리구제 절차, 최신 뉴스를 국민의 눈높이에서 쉽게 안내합니다.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-font-size="medium" data-theme="light">
+  <!-- 상단 공지/접근성 바 -->
+  <header class="top-nav-wrap">
+    <div class="top-accessibility-bar">
+      <div class="container top-bar-content">
+        <div class="quick-notice">
+          <span class="kr-flag" aria-hidden="true">🇰🇷</span>
+          <span class="notice-gov">대한민국 국가인권위원회 공식 안내 누리집</span>
+          <span class="notice-divider">|</span>
+          <span class="notice-text">인권침해·차별 상담 국번 없이 <strong>☎ 1331</strong> (평일 09:00~18:00)</span>
+        </div>
+        <div class="accessibility-controls">
+          <span class="ctrl-label">글자크기:</span>
+          <div class="font-buttons" role="group" aria-label="글자 크기 조절">
+            <button type="button" id="font-sm" class="btn-ctrl" title="글자 작게">A-</button>
+            <button type="button" id="font-md" class="btn-ctrl active" title="글자 보통">A</button>
+            <button type="button" id="font-lg" class="btn-ctrl" title="글자 크게">A+</button>
+          </div>
+          <button type="button" id="theme-toggle" class="btn-theme" title="화면 테마 변경" aria-label="다크 모드 전환">
+            <span class="theme-icon">🌙</span>
+            <span class="theme-text">다크모드</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 주 네비게이션 -->
+    <nav class="main-navbar">
+      <div class="container nav-content">
+        <a href="#hero" class="brand-logo" aria-label="국가인권위원회 홈">
+          <img src="nhrc_logo.png" alt="국가인권위원회 National Human Rights Commission of Korea" class="main-logo-img">
+        </a>
+
+        <button type="button" class="mobile-menu-btn" id="mobile-toggle" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">기관소개</a></li>
+          <li><a href="#checklist" class="highlight-link">맞춤도움 체크</a></li>
+          <li><a href="#diagnosis">자가진단</a></li>
+          <li><a href="#missions">주요업무</a></li>
+          <li><a href="#cases">사례비교</a></li>
+          <li><a href="#trends">2026동향</a></li>
+          <li><a href="#news">최신뉴스</a></li>
+          <li><a href="#contact" class="btn-nav-action">상담·진정</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. 히어로 섹션 -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="dot"></span> 헌법과 법률이 보장하는 독립 국가기구
+          </div>
+          <h1 class="hero-title">
+            <span class="hero-slogan">혐오와 차별을 넘어 누구나 존엄하게</span>
+            사람이 사람답게 사는 세상,<br>
+            <span class="text-highlight">국가인권위원회</span>가 함께합니다
+          </h1>
+          <p class="hero-desc">
+            억울한 차별을 겪으셨나요? 부당한 공권력으로 권리를 침해당하셨나요?<br>
+            국가인권위원회는 행정부·입법부·사법부 어디에도 속하지 않는 <strong>완전한 독립기구</strong>로서,
+            대한민국 모든 국민과 거주자의 인간다운 권리와 존엄을 지키는 든든한 방패입니다.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#checklist" class="btn btn-accent btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              💡 나는 어떤 도움을 받을 수 있을까? 체크리스트
+            </a>
+            <a href="#diagnosis" class="btn btn-navy btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              3분 자가진단
+            </a>
+            <a href="#news" class="btn btn-outline btn-lg">
+              최신 뉴스·권고
+            </a>
+          </div>
+
+          <!-- 신속 상담 배너 -->
+          <div class="hero-direct-call">
+            <div class="call-icon">☎</div>
+            <div class="call-text">
+              <span class="call-title">인권상담 대표전화: <strong>1331</strong> (전국 어디서나 국번 없이)</span>
+              <span class="call-desc">온라인 진정 접수: humanrights.go.kr | 카카오톡 상담 가능</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 핵심 지표 카드 -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-icon bg-blue">⚖️</div>
+            <div class="stat-number">독립 기구</div>
+            <div class="stat-label">행정부 지휘를 받지 않는 '파리원칙' 준수 독립성</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon bg-green">📞</div>
+            <div class="stat-number">30,000+</div>
+            <div class="stat-label">연간 국민 인권 상담 및 진정 접수 해결</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon bg-purple">💡</div>
+            <div class="stat-number">약 90%</div>
+            <div class="stat-label">주요 공공기관의 인권위 시정 권고 수용률</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon bg-amber">🛡️</div>
+            <div class="stat-number">2022~</div>
+            <div class="stat-label">군인권보호관 출범으로 군 장병 인권까지 전면 보호</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 공식 누리집 스타일 퀵 서비스 바 -->
+      <div class="container quick-bar-wrap">
+        <div class="quick-services-bar">
+          <a href="#contact" class="quick-service-tile">
+            <div class="tile-icon-wrap bg-orange">
+              <span>☎</span>
+            </div>
+            <div class="tile-info">
+              <span class="tile-title">인권상담 1331</span>
+              <span class="tile-desc">국번없는 무료 전화상담</span>
+            </div>
+          </a>
+          <a href="#checklist" class="quick-service-tile highlight">
+            <div class="tile-icon-wrap bg-cyan">
+              <span>💡</span>
+            </div>
+            <div class="tile-info">
+              <span class="tile-title">맞춤도움 체크</span>
+              <span class="tile-desc">내게 필요한 지원 찾기</span>
+            </div>
+          </a>
+          <a href="#diagnosis" class="quick-service-tile">
+            <div class="tile-icon-wrap bg-navy">
+              <span>⚖️</span>
+            </div>
+            <div class="tile-info">
+              <span class="tile-title">3분 자가진단</span>
+              <span class="tile-desc">진정 대상 여부 확인</span>
+            </div>
+          </a>
+          <a href="#missions" class="quick-service-tile">
+            <div class="tile-icon-wrap bg-amber">
+              <span>🪖</span>
+            </div>
+            <div class="tile-info">
+              <span class="tile-title">군인권보호관</span>
+              <span class="tile-desc">군대 내 가혹행위 조사</span>
+            </div>
+          </a>
+          <a href="#news" class="quick-service-tile">
+            <div class="tile-icon-wrap bg-teal">
+              <span>📰</span>
+            </div>
+            <div class="tile-info">
+              <span class="tile-title">최신 뉴스·권고</span>
+              <span class="tile-desc">실시간 언론 보도</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 기관 소개 섹션 -->
+    <section id="about" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">About NHRCK</span>
+          <h2 class="section-title">국가인권위원회란 어떤 기관인가요?</h2>
+          <p class="section-desc">
+            인권위원회는 국민의 기본적 인권을 보호하고 인간으로서의 존엄과 가치를 실현하기 위해 설립된 국가기구입니다.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="info-card">
+            <div class="card-badge">IDENTITY 1</div>
+            <div class="info-icon">🏛️</div>
+            <h3>왜 독립기관인가요?</h3>
+            <p>
+              정부나 대통령, 국회 등 권력 기관의 눈치를 보지 않고, <strong>국민의 편에서 공권력의 남용을 견제</strong>할 수 있도록 헌법과 「국가인권위원회법」에 따라 완전한 직무상 독립이 보장되어 있습니다.
+            </p>
+            <div class="card-footer-tip">
+              * 국제연합(UN) 국가인권기구 설립 기준(파리 원칙) 충족
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-badge">IDENTITY 2</div>
+            <div class="info-icon">🤝</div>
+            <h3>차별과 침해의 구제자</h3>
+            <p>
+              국가기관의 불법·부당한 공권력 행사로 인한 <strong>인권침해</strong>와 성별·장애·나이·외모 등에 따른 <strong>차별행위</strong>를 조사하여 시정을 권고하고 피해자를 구제합니다.
+            </p>
+            <div class="card-footer-tip">
+              * 조사 비용은 전액 무료이며 신분 비밀 보장
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-badge">IDENTITY 3</div>
+            <div class="info-icon">📜</div>
+            <h3>법과 제도를 바꾸는 나침반</h3>
+            <p>
+              개별 사건 해결에 그치지 않고, 인권을 침해하는 <strong>법률·시행령·정책을 개정하도록 정부와 국회에 공식 권고</strong>하여 우리 사회의 시스템을 더 공정하고 따뜻하게 바꿉니다.
+            </p>
+            <div class="card-footer-tip">
+              * 사관생도 3금 완화, 정년 연장, 장애인 편의시설 등 권고
+            </div>
+          </div>
+        </div>
+
+        <!-- 인권위가 하는 일 vs 안 하는 일 비교 박스 -->
+        <div class="do-dont-container">
+          <h3 class="do-dont-title">국민이 자주 묻는 질문: 인권위가 하는 일 vs 하지 않는 일</h3>
+          <div class="do-dont-grid">
+            <div class="do-box">
+              <div class="box-header green">
+                <span class="check-icon">✓</span>
+                <h4>인권위가 해결해 드리는 일</h4>
+              </div>
+              <ul class="check-list">
+                <li><strong>국가기관·지자체의 공권력 남용:</strong> 경찰·검찰의 부당 수사, 교도소·군대의 가혹행위, 공무원의 기본권 침해</li>
+                <li><strong>고용·교육·시설 이용의 부당한 차별:</strong> 성별, 나이, 장애, 출신지역, 종교, 신체조건에 따른 불이익</li>
+                <li><strong>사회적 약자 보호:</strong> 아동, 노인, 장애인, 이주민, 군 장병 인권 실태조사 및 보호조치</li>
+                <li><strong>제도 및 법령 개선:</strong> 기본권을 침해하는 불합리한 법령과 규칙의 개정 권고</li>
+              </ul>
+            </div>
+
+            <div class="dont-box">
+              <div class="box-header red">
+                <span class="check-icon">✕</span>
+                <h4>인권위의 조사 대상이 아닌 일</h4>
+              </div>
+              <ul class="cross-list">
+                <li><strong>개인 간의 단순 민사·금전 다툼:</strong> 이웃 간 층간소음 다툼, 빌려준 돈 청구, 사기 피해 등 (법원·경찰 관할)</li>
+                <li><strong>법원 재판 결과의 번복:</strong> 이미 판결이 확정되었거나 법원에서 재판 중인 사건 (사법부 독립성)</li>
+                <li><strong>피해 발생 후 1년이 경과한 사건:</strong> 원칙적으로 발생일로부터 1년 이내에 진정 필요 (예외 제외)</li>
+                <li><strong>형사처벌 직접 부과:</strong> 인권위는 수사기관이 아니므로 벌금을 물리거나 구속할 수 없음 (검찰 고발 권고 가능)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5 맞춤도움 체크리스트 겸 설문 섹션 -->
+    <section id="checklist" class="section checklist-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Citizen Support & Benefit Checklist</span>
+          <h2 class="section-title">나는 이 기관으로부터 어떤 도움을 받을 수 있을까?</h2>
+          <p class="section-desc">
+            복잡한 법률 용어는 잊으세요! 나의 신분과 현재 겪고 있는 고민을 체크하시면, 
+            국가인권위원회가 제공하는 <strong>100% 무료 전담조사, 가해자 징계·시정명령, 긴급구제 및 교육 혜택</strong>을 실시간 맞춤 리포트로 확인해 드립니다.
+          </p>
+        </div>
+
+        <div class="checklist-card">
+          <!-- STEP 1: 나의 신분 / 상황 필터 태그 -->
+          <div class="checklist-step-box">
+            <div class="step-badge-title">
+              <span class="step-num-pill">1단계</span>
+              <h3>나의 신분 또는 해당되는 유형을 선택해 주세요 (복수 선택 가능)</h3>
+            </div>
+            <p class="step-guide">유형을 누르시면 관련된 맞춤 상황 체크리스트가 자동으로 하이라이트됩니다.</p>
+            <div class="tag-selector-wrap" id="user-role-tags">
+              <button type="button" class="tag-pill active" data-role="all">🌟 전체 보기</button>
+              <button type="button" class="tag-pill" data-role="worker">👔 직장인 / 취업준비생</button>
+              <button type="button" class="tag-pill" data-role="disabled">♿ 장애인 / 환자 / 시설이용자</button>
+              <button type="button" class="tag-pill" data-role="military">🪖 군인 / 입대예정 / 군 가족</button>
+              <button type="button" class="tag-pill" data-role="student">🎒 학생 / 청소년 / 학부모</button>
+              <button type="button" class="tag-pill" data-role="justice">👮 경찰·검찰 수사 / 교도소 수용</button>
+              <button type="button" class="tag-pill" data-role="migrant">🌏 외국인 / 다문화가정</button>
+              <button type="button" class="tag-pill" data-role="citizen">🙋 일반 시민 / 연구·학습자</button>
+            </div>
+          </div>
+
+          <!-- STEP 2: 내가 겪고 있거나 도움이 필요한 고민 체크리스트 -->
+          <div class="checklist-step-box">
+            <div class="step-badge-title">
+              <span class="step-num-pill">2단계</span>
+              <h3>내가 겪고 있거나 확인하고 싶은 상황을 체크해 주세요</h3>
+              <div class="checklist-quick-actions">
+                <button type="button" id="btn-select-all" class="btn-text-action">전체 선택</button>
+                <span class="divider">|</span>
+                <button type="button" id="btn-clear-all" class="btn-text-action">선택 초기화</button>
+              </div>
+            </div>
+
+            <div class="check-items-grid" id="check-items-container">
+              <!-- JS에서 동적으로 렌더링됩니다 -->
+            </div>
+          </div>
+
+          <!-- STEP 3: 맞춤 지원 리포트 결과 영역 -->
+          <div class="help-report-container" id="help-report-result">
+            <!-- JS에서 선택 상태에 따라 실시간 생성됩니다 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 대화형 자가진단 섹션 -->
+    <section id="diagnosis" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Interactive Diagnostic Tool</span>
+          <h2 class="section-title">내 사건도 인권위에 도움을 요청할 수 있을까요?</h2>
+          <p class="section-desc">
+            단 30초! 몇 가지 질문에 답하시면 인권위 진정 대상 여부와 가장 빠르고 적절한 구제 방법을 알려드립니다.
+          </p>
+        </div>
+
+        <div class="diagnosis-wrapper" id="diagnosis-app">
+          <!-- 스텝 진행바 -->
+          <div class="wizard-progress">
+            <div class="step-indicator active" data-step="1">1. 행위 주체</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="2">2. 피해 유형</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="3">3. 진행 상황</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" data-step="4">4. 진단 결과</div>
+          </div>
+
+          <!-- 단계별 카드 -->
+          <div class="wizard-card" id="wizard-content">
+            <!-- 동적으로 JS가 주입하거나 스위칭 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 주요 업무 4대 축 & 전문 위원회 -->
+    <section id="missions" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Core Missions</span>
+          <h2 class="section-title">국가인권위원회의 4대 주요 업무</h2>
+          <p class="section-desc">
+            상담에서 제도 개선까지, 국민의 권리를 지키는 인권위원회의 체계적인 업무 영역입니다.
+          </p>
+        </div>
+
+        <div class="missions-grid">
+          <div class="mission-item">
+            <div class="mission-number">01</div>
+            <div class="mission-icon">🔍</div>
+            <h3>인권침해 조사 및 구제</h3>
+            <p>
+              국가기관, 지방자치단체, 각급 학교, 교도소, 복지시설 등에서 발생한 헌법상 기본권 침해 행위를 독립적으로 조사하고, 피해 회복과 재발 방지를 권고합니다.
+            </p>
+            <ul class="mission-tags">
+              <li>#체포·구속 절차</li>
+              <li>#교정시설 수용환경</li>
+              <li>#개인정보 및 프라이버시</li>
+            </ul>
+          </div>
+
+          <div class="mission-item">
+            <div class="mission-number">02</div>
+            <div class="mission-icon">⚖️</div>
+            <h3>차별행위 조사 및 시정</h3>
+            <p>
+              합리적인 이유 없이 성별, 장애, 병력, 나이, 출신국가, 성적 지향, 학력 등을 이유로 고용이나 교육, 재화·용역 이용에서 차별을 가하는 행위를 시정합니다.
+            </p>
+            <ul class="mission-tags">
+              <li>#채용 면접 차별</li>
+              <li>#장애인 이동권/편의제공</li>
+              <li>#임금 및 승진 격차</li>
+            </ul>
+          </div>
+
+          <div class="mission-item">
+            <div class="mission-number">03</div>
+            <div class="mission-icon">📢</div>
+            <h3>법령·제도·정책 권고</h3>
+            <p>
+              국민의 인권에 중대한 영향을 미치는 국가 법령과 제도를 상시 모니터링하여, 법률 제정·개정 의견을 표명하고 국가인권보고서를 정기적으로 발간합니다.
+            </p>
+            <ul class="mission-tags">
+              <li>#법정 정년 65세 권고</li>
+              <li>#사관생도 흡연·사복 규정</li>
+              <li>#AI 인권 가이드라인</li>
+            </ul>
+          </div>
+
+          <div class="mission-item">
+            <div class="mission-number">04</div>
+            <div class="mission-icon">🌱</div>
+            <h3>인권교육 및 문화 확산</h3>
+            <p>
+              공무원, 교원, 기업, 일반 시민을 대상으로 인권 감수성 향상 교육을 실시하고, 인권도서관 운영, 영화제, 전시회 등을 통해 일상 속 인권 존중 문화를 일굽니다.
+            </p>
+            <ul class="mission-tags">
+              <li>#인권도서관 운영</li>
+              <li>#공공인권교육 포털</li>
+              <li>#혐오표현 예방 캠페인</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 특화 보호 기구 배너 -->
+        <div class="special-bodies-card">
+          <div class="special-body-header">
+            <span class="badge badge-primary">전문 위원회 & 옴부즈만</span>
+            <h3>취약 계층을 더 두텁게 보호하는 특화 기구</h3>
+          </div>
+          <div class="special-body-grid">
+            <div class="special-body-item">
+              <h4>🛡️ 군인권보호관 (2022년 신설)</h4>
+              <p>군 복무 중 발생하는 폭행·가혹행위, 성폭력, 군 사망사건을 독립적으로 조사하고 유족의 권리를 보장하는 군 인권 전담 옴부즈만</p>
+            </div>
+            <div class="special-body-item">
+              <h4>♿ 장애인차별시정소위원회</h4>
+              <p>휠체어 경사로 미설치, 점자 미제공, 장애인 고용 차별 등 일상 속 장애인 배제를 강력하게 시정하는 법정 기구</p>
+            </div>
+            <div class="special-body-item">
+              <h4>👶 아동청소년인권소위원회</h4>
+              <p>학생인권, 학대 피해 아동, 시설 보호 청소년의 학습권과 자기결정권을 옹호하고 유엔아동권리협약을 실천</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 실제 구제 사례 & 진정 절차 -->
+    <section id="cases" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Real Cases & Workflow</span>
+          <h2 class="section-title">알기 쉬운 대표 사례와 구제 절차</h2>
+          <p class="section-desc">
+            어떤 상황에서 인권위가 개입하고 어떻게 문제가 해결되는지 실제 사례와 진행 단계로 살펴봅니다.
+          </p>
+        </div>
+
+        <!-- 탭 네비게이션 -->
+        <div class="case-tabs">
+          <button type="button" class="tab-btn active" data-tab="tab-cases">실제 구제 성공사례</button>
+          <button type="button" class="tab-btn" data-tab="tab-process">진정 신청 5단계 로드맵</button>
+        </div>
+
+        <!-- 탭 컨텐츠 1: 사례 카드 -->
+        <div id="tab-cases" class="tab-pane active">
+          <div class="grid-2">
+            <div class="case-card">
+              <div class="case-header">
+                <span class="case-badge bg-blue-subtle">공권력 & 수사</span>
+                <span class="case-status">시정 권고 수용</span>
+              </div>
+              <h4 class="case-title">피의자 조사 시 변호인 참여권 제한 및 무리한 심야조사</h4>
+              <p class="case-desc">
+                <strong>[사건 개요]</strong> 피의자 A씨는 경찰 조사 중 변호인 조력을 받으려 했으나 경찰관이 자리를 비우게 하고 심야까지 강압 조사를 진행하여 인권위에 진정했습니다.
+              </p>
+              <div class="case-result">
+                <strong>💡 인권위 판단 & 조치:</strong> 헌법상 보장된 변호인의 조력을 받을 권리와 적법절차를 위반했다고 판단. 해당 수사관 경고 조치 및 피의자 조사 지침 개정을 경찰청에 권고하였고 전면 수용되었습니다.
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <span class="case-badge bg-green-subtle">장애인 차별</span>
+                <span class="case-status">법령 개정 권고</span>
+              </div>
+              <h4 class="case-title">소매점·편의점 휠체어 경사로 미설치로 접근 불가</h4>
+              <p class="case-desc">
+                <strong>[사건 개요]</strong> 휠체어 이용 장애인 B씨는 동네 식당과 편의점의 턱 때문에 혼자서 들어갈 수 없어 일상생활에 심각한 차별을 겪고 있다고 진정했습니다.
+              </p>
+              <div class="case-result">
+                <strong>💡 인권위 판단 & 조치:</strong> 공중이용시설의 장애인 접근권은 기본적 권리임을 명시. 소규모 소매점까지 편의시설 설치 의무를 확대하도록 보건복지부 등 5개 부처에 시행령 개정을 권고했습니다.
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <span class="case-badge bg-purple-subtle">채용 & 성별</span>
+                <span class="case-status">제도 개선</span>
+              </div>
+              <h4 class="case-title">채용 면접에서 "결혼 계획이 있느냐" 사적 질문</h4>
+              <p class="case-desc">
+                <strong>[사건 개요]</strong> 공공기관 신규직원 면접시험에 응시한 여성 구직자 C씨는 직무와 전혀 무관한 결혼 여부, 출산 계획에 대한 집중 질문을 받았습니다.
+              </p>
+              <div class="case-result">
+                <strong>💡 인권위 판단 & 조치:</strong> 성별에 따른 고용 차별 행위로 규정. 면접관 인권교육 실시, 면접 질문 가이드라인 정비, 면접 평가표 블라인드 방식 의무화를 권고했습니다.
+              </div>
+            </div>
+
+            <div class="case-card">
+              <div class="case-header">
+                <span class="case-badge bg-amber-subtle">군 인권</span>
+                <span class="case-status">규정 완화 이행</span>
+              </div>
+              <h4 class="case-title">사관생도 외출 시 사복 착용 및 흡연·사생활 과도 제한</h4>
+              <p class="case-desc">
+                <strong>[사건 개요]</strong> 군 사관학교가 영외 외출 시에도 흡연, 사복 착용, 이성교제를 전면 금지하는 전통적인 '3금 규정'을 유지하여 기본권을 침해한다는 진정이 제기되었습니다.
+              </p>
+              <div class="case-result">
+                <strong>💡 인권위 판단 & 조치:</strong> 군인의 특수성을 인정하더라도 24시간 과도한 사생활 규제는 비례의 원칙에 반한다고 판단. 국방부는 인권위 권고를 수용하여 사복 착용과 제한적 흡연을 허용했습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 탭 컨텐츠 2: 진정 절차 로드맵 -->
+        <div id="tab-process" class="tab-pane">
+          <div class="process-steps">
+            <div class="process-step">
+              <div class="step-num">STEP 1</div>
+              <div class="step-icon">📝</div>
+              <h4>진정 접수</h4>
+              <p>인터넷 홈페이지, 전화(1331), 우편, 팩스, 직접 방문 등 편한 방법으로 접수 (비용 무료)</p>
+            </div>
+            <div class="process-arrow">➔</div>
+
+            <div class="process-step">
+              <div class="step-num">STEP 2</div>
+              <div class="step-icon">🔎</div>
+              <h4>사건 분류 & 배당</h4>
+              <p>조사 대상 여부 검토 후 전담 조사관 지정. (대상 아닐 시 관련 기관 안내 후 이첩)</p>
+            </div>
+            <div class="process-arrow">➔</div>
+
+            <div class="process-step">
+              <div class="step-num">STEP 3</div>
+              <div class="step-icon">📋</div>
+              <h4>현장 사실 조사</h4>
+              <p>당사자 진술 청취, 현장 방문, CCTV 및 서류 검토 등 철저한 독립적 증거 조사</p>
+            </div>
+            <div class="process-arrow">➔</div>
+
+            <div class="process-step">
+              <div class="step-num">STEP 4</div>
+              <div class="step-icon">⚖️</div>
+              <h4>위원회 심의·의결</h4>
+              <p>소위원회 또는 전원위원회에서 합의제 방식으로 침해/차별 여부 판단 및 권고 결정</p>
+            </div>
+            <div class="process-arrow">➔</div>
+
+            <div class="process-step">
+              <div class="step-num">STEP 5</div>
+              <div class="step-icon">📢</div>
+              <h4>구제 조치 & 공표</h4>
+              <p>피진정기관에 시정·원상회복 권고. 권고 불수용 시 언론 및 국민에게 명단 공표</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 2026 주요 정책 동향 & 사회적 이슈 -->
+    <section id="trends" class="section bg-surface">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">2026 Trends & Issues</span>
+          <h2 class="section-title">국민이 주목해야 할 최근 주요 인권 동향</h2>
+          <p class="section-desc">
+            변화하는 기술과 인구 구조, 사회 현안에 발맞추어 인권위원회가 집중하고 있는 핵심 아젠다입니다.
+          </p>
+        </div>
+
+        <div class="trends-container">
+          <div class="trend-card featured">
+            <div class="trend-meta">
+              <span class="badge badge-accent">최근 핵심 동향</span>
+              <span class="trend-date">2026 하반기</span>
+            </div>
+            <h3 class="trend-title">이주민을 동등한 ‘권리의 주체’로 존중: 국제 콘퍼런스 개최</h3>
+            <p class="trend-text">
+              안창호 국가인권위원장은 최근 국제 인권 콘퍼런스에서 "이주민은 단순한 시혜나 배려의 대상이 아니며, 우리 사회의 당당한 구성원이자 권리의 주체"임을 선언했습니다. 저출생·고령화 속에서 급증하는 외국인 노동자와 다문화 가정에 대한 일상적 혐오와 제도적 차별을 해소하기 위한 범정부적 인식 개선과 정책 개편을 촉구하고 있습니다.
+            </p>
+            <div class="trend-tags">
+              <span>#다문화사회</span>
+              <span>#외국인노동자인권</span>
+              <span>#혐오표현근절</span>
+            </div>
+          </div>
+
+          <div class="trends-sub-grid">
+            <div class="trend-card">
+              <div class="trend-meta">
+                <span class="badge badge-blue">사회·노동</span>
+                <span class="trend-date">정책 권고</span>
+              </div>
+              <h4 class="trend-title">초고령사회 대응: 법정 정년 65세 상향 권고</h4>
+              <p class="trend-text">
+                노인 빈곤율 OECD 1위 극복과 국민연금 수급 개시 연령(65세)과의 소득 공백을 메우기 위해, 국무총리와 고용노동부에 법정 정년을 60세에서 65세로 단계적 상향할 것을 공식 권고했습니다.
+              </p>
+            </div>
+
+            <div class="trend-card">
+              <div class="trend-meta">
+                <span class="badge badge-green">디지털 & AI</span>
+                <span class="trend-date">가이드라인</span>
+              </div>
+              <h4 class="trend-title">인공지능(AI)과 디지털 프라이버시 보호</h4>
+              <p class="trend-text">
+                채용·복지수급 AI 알고리즘의 편향성 검증 의무화, 입국심사나 수사 과정에서의 무분별한 휴대전화 포렌식·열람에 대한 엄격한 본인 동의 절차 마련을 촉구하고 있습니다.
+              </p>
+            </div>
+
+            <div class="trend-card">
+              <div class="trend-meta">
+                <span class="badge badge-purple">제도 & 기관</span>
+                <span class="trend-date">파리원칙</span>
+              </div>
+              <h4 class="trend-title">국가인권위원회 독립성 수호 논쟁</h4>
+              <p class="trend-text">
+                정부 부처의 세종 이전 계획과 관련하여, 피감기관인 행정부처와 한 건물에 입주할 경우 UN 파리원칙이 규정한 독립성이 훼손될 수 있다는 우려를 표명하며 독립 청사 원칙을 강조하고 있습니다.
+              </p>
+            </div>
+
+            <div class="trend-card">
+              <div class="trend-meta">
+                <span class="badge badge-amber">군 & 청년</span>
+                <span class="trend-date">기본권 보장</span>
+              </div>
+              <h4 class="trend-title">사관생도 기본권 존중 & 군 사망사건 점검</h4>
+              <p class="trend-text">
+                사관생도의 외출 시 사복 착용 및 제한적 흡연 허용 권고 수용을 이끌어냈으며, 영내 폭행·사망 사고 발생 시 군부대의 관리 책임 소홀을 독립적으로 진단하는 감시망을 강화하고 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 최신 뉴스 기사 허브 (실제 뉴스 URL 삽입) -->
+    <section id="news" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Media & News Center</span>
+          <h2 class="section-title">국가인권위원회 최신 언론 보도 및 뉴스</h2>
+          <p class="section-desc">
+            주요 언론사 및 포털에 보도된 국가인권위원회의 최신 뉴스 기사를 원문 링크와 함께 제공합니다.
+          </p>
+        </div>
+
+        <!-- 뉴스 필터 및 검색 바 -->
+        <div class="news-control-bar">
+          <div class="news-filter-group" id="news-filters">
+            <button type="button" class="btn-filter active" data-category="all">전체보기 (<span id="count-all">0</span>)</button>
+            <button type="button" class="btn-filter" data-category="recommend">권고·시정</button>
+            <button type="button" class="btn-filter" data-category="military">군·장애인</button>
+            <button type="button" class="btn-filter" data-category="society">사회·정책</button>
+            <button type="button" class="btn-filter" data-category="issue">기관·현안</button>
+          </div>
+
+          <div class="news-search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="news-search-input" placeholder="뉴스 제목 또는 키워드 검색..." aria-label="뉴스 검색">
+          </div>
+        </div>
+
+        <!-- 뉴스 카드 목록 -->
+        <div class="news-grid" id="news-grid">
+          <!-- JS에서 동적으로 렌더링 -->
+        </div>
+
+        <div class="news-official-banner">
+          <div class="banner-text">
+            <h4>더 많은 공식 보도자료와 의결 결정문이 필요하신가요?</h4>
+            <p>국가인권위원회 공식 홈페이지의 [알림·공고 > 언론보도 > 보도자료] 메뉴에서 원문 전문을 다운로드할 수 있습니다.</p>
+          </div>
+          <a href="https://www.humanrights.go.kr" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">
+            인권위 공식 홈페이지 바로가기 ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 자주 묻는 질문 (FAQ Accordion) -->
+    <section id="faq" class="section bg-surface">
+      <div class="container max-w-800">
+        <div class="section-header">
+          <span class="section-sub">FAQ</span>
+          <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
+          <p class="section-desc">국민 여러분이 인권위원회에 대해 가장 궁금해하시는 점들을 모았습니다.</p>
+        </div>
+
+        <div class="accordion" id="faq-accordion">
+          <!-- 아코디언 아이템 1 -->
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span class="q-mark">Q</span>
+              <span class="q-title">인권위 권고는 법적 강제력이 없는데, 가해 기관이 안 지키면 어떻게 되나요?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                인권위의 권고는 법원 판결문처럼 물리적으로 강제 집행되지는 않지만, <strong>공공기관의 권고 수용률은 90% 안팎</strong>으로 매우 높습니다.<br>
+                만약 정당한 이유 없이 권고를 거부하거나 불수용할 경우, 「국가인권위원회법」에 따라 <strong>그 기관의 명칭과 불수용 사유를 언론과 대국민에 전면 공표</strong>하여 강력한 사회적·행정적 책임을 묻습니다.
+              </div>
+            </div>
+          </div>
+
+          <!-- 아코디언 아이템 2 -->
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span class="q-mark">Q</span>
+              <span class="q-title">인권위에 진정을 넣으면 회사나 피진정인에게 제 신분이 알려지나요?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <strong>철저하게 신분이 보호됩니다.</strong> 진정인은 조사 과정에서 비공개를 요청할 수 있으며, 법률에 따라 진정을 이유로 한 어떠한 불이익 조치(해고, 인사상 불이익 등)도 엄격히 금지되어 있습니다. 이를 위반할 경우 형사처벌 대상이 됩니다.
+              </div>
+            </div>
+          </div>
+
+          <!-- 아코디언 아이템 3 -->
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span class="q-mark">Q</span>
+              <span class="q-title">진정 비용이 드나요? 변호사를 선임해야 하나요?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <strong>모든 상담 및 진정 절차는 100% 무료입니다.</strong> 변호사를 선임할 필요가 전혀 없으며, 구체적인 법률 용어를 몰라도 사실관계(언제, 어디서, 누구에게, 어떤 일을 겪었는지)를 육하원칙에 맞게 편하게 적어 제출하시면 인권위 소속 조사관이 직접 증거를 조사합니다.
+              </div>
+            </div>
+          </div>
+
+          <!-- 아코디언 아이템 4 -->
+          <div class="accordion-item">
+            <button type="button" class="accordion-header" aria-expanded="false">
+              <span class="q-mark">Q</span>
+              <span class="q-title">본인이 아닌 가족이나 친구가 대신 진정할 수도 있나요?</span>
+              <span class="accordion-arrow">▼</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-content">
+                <strong>네, 가능합니다(제3자 진정).</strong> 피해자가 구금 상태이거나 장애, 질병 등으로 직접 진정하기 어려운 경우, 가족, 친지, 변호인, 인권단체 등 제3자가 피해자를 대리하여 진정서를 제출할 수 있습니다. 단, 피해자의 명시적인 반대 의사가 있으면 조사가 각하될 수 있습니다.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 상담 및 진정 접수 창구 안내 (1331 & 전국 사무소) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-sub">Get Help & Support</span>
+          <h2 class="section-title">인권 상담 및 진정 신청 안내</h2>
+          <p class="section-desc">
+            도움이 필요할 때 망설이지 마세요. 다양한 채널로 열려 있는 인권위원회가 경청하겠습니다.
+          </p>
+        </div>
+
+        <div class="contact-card-main">
+          <div class="contact-primary-info">
+            <div class="phone-big-box">
+              <span class="phone-badge">전국 어디서나 국번 없이</span>
+              <div class="phone-num">☎ 1331</div>
+              <p class="phone-hours">평일 09:00 ~ 18:00 (주말 및 공휴일 휴무)</p>
+            </div>
+            <div class="direct-channels">
+              <div class="channel-item">
+                <span class="channel-icon">🌐</span>
+                <div>
+                  <strong>인터넷 홈페이지 진정</strong>
+                  <p>humanrights.go.kr 24시간 온라인 접수</p>
+                </div>
+              </div>
+              <div class="channel-item">
+                <span class="channel-icon">✉️</span>
+                <div>
+                  <strong>우편 및 팩스 접수</strong>
+                  <p>(04551) 서울 중구 삼일대로 340 나라키움빌딩 / FAX: 02-2125-9811</p>
+                </div>
+              </div>
+              <div class="channel-item">
+                <span class="channel-icon">🤟</span>
+                <div>
+                  <strong>수어통역 화상상담</strong>
+                  <p>청각장애인을 위한 영상전화(070-7947-1331) 및 수어 통역</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 전국 인권사무소 안내 그리드 -->
+          <div class="regional-offices">
+            <h4 class="regional-title">전국 거점 지역인권사무소</h4>
+            <div class="office-grid">
+              <div class="office-card">
+                <h5>본부 (서울)</h5>
+                <p>서울특별시 중구 삼일대로 340 (저동1가, 나라키움빌딩)</p>
+                <span class="office-tel">☎ 02-2125-9700</span>
+              </div>
+              <div class="office-card">
+                <h5>부산인권사무소</h5>
+                <p>부산·울산·경남 관할 (부산 연제구 중앙대로 1000)</p>
+                <span class="office-tel">☎ 051-710-9710</span>
+              </div>
+              <div class="office-card">
+                <h5>광주인권사무소</h5>
+                <p>광주·전남·전북·제주 관할 (광주 동구 금남로 238)</p>
+                <span class="office-tel">☎ 062-604-0600</span>
+              </div>
+              <div class="office-card">
+                <h5>대구인권사무소</h5>
+                <p>대구·경북 관할 (대구 중구 국채보상로 648)</p>
+                <span class="office-tel">☎ 053-212-7000</span>
+              </div>
+              <div class="office-card">
+                <h5>대전인권사무소</h5>
+                <p>대전·세종·충남·충북 관할 (대전 서구 문정로 48번길 30)</p>
+                <span class="office-tel">☎ 042-472-9040</span>
+              </div>
+              <div class="office-card">
+                <h5>강원인권사무소</h5>
+                <p>강원특별자치도 관할 (강원 원주시 시청로 26)</p>
+                <span class="office-tel">☎ 033-766-8710</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <img src="nhrc_logo.png" alt="국가인권위원회" class="footer-logo-img">
+          </div>
+          <p class="footer-desc">
+            국가인권위원회는 모든 개인이 가지는 불가침의 기본적 인권을 보호하고, 그 수준을 향상시킴으로써 인간으로서의 존엄과 가치를 실현하기 위해 설립된 독립 국가기구입니다.
+          </p>
+          <div class="footer-address-info">
+            <p><strong>본부:</strong> (04551) 서울특별시 중구 삼일대로 340 (저동1가, 나라키움 저동빌딩) 10층~13층</p>
+            <p><strong>인권상담 대표전화:</strong> 국번 없이 1331 (수어상담 070-7947-1331) | <strong>FAX:</strong> 02-2125-9811</p>
+          </div>
+          <div class="footer-open-gov">
+            <span class="kogl-badge">공공누리 제1유형 (Public Domain)</span>
+            <span class="kogl-text">본 누리집의 공공저작물은 출처표시 조건에 따라 자유롭게 이용할 수 있습니다.</span>
+          </div>
+        </div>
+        <div class="footer-quick-links">
+          <div class="link-col">
+            <h5>공식 링크 바로가기</h5>
+            <ul>
+              <li><a href="https://www.humanrights.go.kr" target="_blank" rel="noopener noreferrer">국가인권위원회 공식 포털 ↗</a></li>
+              <li><a href="https://library.humanrights.go.kr" target="_blank" rel="noopener noreferrer">국가인권위원회 도서관 ↗</a></li>
+              <li><a href="https://edu.humanrights.go.kr" target="_blank" rel="noopener noreferrer">국가인권교육원 e-배움터 ↗</a></li>
+              <li><a href="https://www.humanrights.go.kr/base/board/list?boardManagementNo=24&menuLevel=3&menuNo=72" target="_blank" rel="noopener noreferrer">위원회 결정문·권고 열람 ↗</a></li>
+            </ul>
+          </div>
+          <div class="link-col">
+            <h5>관련 법령 정보</h5>
+            <ul>
+              <li><a href="https://www.law.go.kr/법령/국가인권위원회법" target="_blank" rel="noopener noreferrer">국가인권위원회법 전문 ↗</a></li>
+              <li><a href="https://www.law.go.kr/법령/장애인차별금지및권리구제등에관한법률" target="_blank" rel="noopener noreferrer">장애인차별금지법 전문 ↗</a></li>
+              <li><a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank" rel="noopener noreferrer">세계인권선언 (UN) ↗</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © 2026 National Human Rights Commission of Korea. 본 웹 앱은 웹 표준(HTML5/CSS3/Vanilla JS) 규격으로 제작되어 별도의 서버 구동 없이 더블클릭으로 안전하게 실행됩니다.
+        </p>
+        <div class="footer-badges">
+          <span class="env-badge wa-cert">웹접근성 품질인증(WA) 준수</span>
+          <span class="env-badge">No Build Tool</span>
+          <span class="env-badge">file:// Standalone Ready</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 자바스크립트 로드 (모듈 없이 일반 스크립트로 동작하므로 file:// 프로토콜에서 완벽 실행) -->
+  <script src="app.js"></script>
+</body>
+</html>
